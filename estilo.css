@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand img{
+    width: 8em;
+}
+
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.titulos img{
+    width: 50rem;
+    height: 30rem;
+}
+.titulos-dos{
+    text-align: center;
+    margin-top: 5rem;
+}
+.titulos-dos h2{
+    color:blue;
+    font-size: 5em;
+}
+.titulos-dos .imagenes{
+    display: flex;
+    justify-content: center;
+    
+}
+.titulos-dos .imagenes img{
+    width: 30%;
+    margin-left: 2rem;
+}
