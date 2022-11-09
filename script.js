@@ -100,12 +100,16 @@
 
    //Sumamos todos los precios con el metodo .reduce ->Funciones de orden superior
 
-   let eleccion = prompt("Desea agregar las 3 marcas de zapatillas al carrito?Teclee SI para confirmar");
+   let eleccion = prompt("Desea agregar las 3 marcas de zapatillas al carrito?Teclee `SI` para confirmar o `Quiero` para conocer el precio de las zapatillas de menor a mayor");
 
    if(eleccion == "SI") {
 
    let precioTotal = precioMarcas.reduce((acumulador,elemento)=>acumulador+elemento,0);
    alert("El precio total entre las 3 marcas de zapatillas es de: " + precioTotal);
+   }
+   else if(eleccion == "Quiero") {
+    let orden = precioMarcas.sort((a,b) => a-b);
+    alert("El orden de los precios de las zapatillas de menor a mayor es: " + orden );
    }
    else{
     alert("Por el momento solo puede comprar las 3 zapatillas juntas");
