@@ -7,7 +7,30 @@
 .navbar-brand img{
     width: 8em;
 }
+.container-fluid{
+    margin-bottom: 0;
+}
+.main{
+    margin-top: 0;
+}
+.container-fluid.dark-mode{
+    background-color: rgb(168, 102, 102);
+    color:white;
+}
 
+#color-mode{
+    width: 15em;
+    padding:0.5em;
+    background-color: pink;
+}
+body{
+    background-color: white;
+    color:black;
+}
+body.dark-mode{ /*Si body tiene esta clase*/
+    background-color:rgb(31, 22, 22);
+    color:white;
+}
 
 .titulos{
     display: flex;
@@ -28,6 +51,7 @@
     color:blue;
     font-size: 5em;
 }
+
 .titulos-dos .imagenes{
     display: flex;
     justify-content: center;
@@ -36,4 +60,37 @@
 .titulos-dos .imagenes img{
     width: 30%;
     margin-left: 2rem;
+}
+
+   
+.form-input{
+    width: 20em;
+}
+.form{
+    display: flex;
+    gap:1rem;
+}
+.container{
+    display: flex;
+    margin-top: 5em;
+    margin-bottom: 20em;
+   
+}
+.container-productos{
+    display: flex;
+    flex-direction: column;
+}
+.productos-disponibles{
+    width: 15em;
+    margin-left: 5em;
+    height: 5em;
+    background-color: red;
+}
+.disponibles{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    margin-left: 8em;
+    
 }
